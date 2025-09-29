@@ -1362,6 +1362,12 @@
     "AuthorizationType": {
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/connection.ts"
     },
+    "IncludeDetail": {
+      "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/event-bus.ts"
+    },
+    "Level": {
+      "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/event-bus.ts"
+    },
     "InputType": {
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/input.ts"
     }
@@ -1620,6 +1626,9 @@
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-route53/lib/health-check.ts"
     },
     "CaaTag": {
+      "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-route53/lib/record-set.ts"
+    },
+    "Alpn": {
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-route53/lib/record-set.ts"
     }
   },
@@ -1889,9 +1898,6 @@
     }
   },
   "synthetics": {
-    "BrowserType": {
-      "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-synthetics/lib/canary.ts"
-    },
     "Cleanup": {
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-synthetics/lib/canary.ts"
     },

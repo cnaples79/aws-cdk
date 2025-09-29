@@ -546,6 +546,7 @@
         "COHERE_EMBED_MULTILINGUAL_V3",
         "COHERE_EMBED_MULTILINGUAL_V3_0_512",
         "DEEP_SEEK_R1_V1_0",
+        "DEEP_SEEK_V3_V1_0",
         "OPENAI_GPT_OSS_120B_1",
         "OPENAI_GPT_OSS_20B_1",
         "LUMA_RAY_V2_0",
@@ -577,6 +578,10 @@
         "MISTRAL_SMALL_V0_1",
         "MISTRAL_LARGE_2_V0_1",
         "MISTRAL_PIXTRAL_LARGE_2502_V1_0",
+        "QWEN_QWEN3_32B_V1_0",
+        "QWEN_QWEN3_235B_A22B_2507_V1_0",
+        "QWEN_QWEN3_CODER_30B_A3B_V1_0",
+        "QWEN_QWEN3_CODER_480B_A35B_V1_0",
         "STABILITY_STABLE_DIFFUSION_XL",
         "STABILITY_STABLE_DIFFUSION_XL_V0",
         "STABILITY_STABLE_DIFFUSION_XL_V1",
@@ -805,6 +810,8 @@
         "r8g",
         "memory8-graviton4-nvme-drive",
         "r8gd",
+        "memory8-graviton4-high-network-bandwidth",
+        "r8gn",
         "compute3",
         "c3",
         "compute4",
@@ -3872,6 +3879,7 @@
         "python3.9",
         "python3.10",
         "python3.11",
+        "python3.13",
         "python3.13"
       ]
     },
@@ -7093,7 +7101,9 @@
       "enumLike": false,
       "values": [
         "MUTABLE",
-        "IMMUTABLE"
+        "IMMUTABLE",
+        "IMMUTABLE_WITH_EXCLUSION",
+        "MUTABLE_WITH_EXCLUSION"
       ]
     },
     "RepositoryEncryption": {
@@ -8128,6 +8138,24 @@
         "API_KEY",
         "BASIC",
         "OAUTH_CLIENT_CREDENTIALS"
+      ]
+    },
+    "IncludeDetail": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/event-bus.ts",
+      "enumLike": false,
+      "values": [
+        "FULL",
+        "NONE"
+      ]
+    },
+    "Level": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-events/lib/event-bus.ts",
+      "enumLike": false,
+      "values": [
+        "INFO",
+        "ERROR",
+        "TRACE",
+        "OFF"
       ]
     },
     "InputType": {
@@ -10305,6 +10333,15 @@
         "issue",
         "issuewild",
         "iodef"
+      ]
+    },
+    "Alpn": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-route53/lib/record-set.ts",
+      "enumLike": true,
+      "values": [
+        "HTTP1_1",
+        "H2",
+        "H3"
       ]
     }
   },

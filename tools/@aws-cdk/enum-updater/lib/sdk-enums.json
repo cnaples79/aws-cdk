@@ -37,6 +37,7 @@
   "aiops": {},
   "amazonmq": {
     "AuthenticationStrategy": [
+      "CONFIG_MANAGED",
       "LDAP",
       "SIMPLE"
     ],
@@ -1038,7 +1039,13 @@
       "Deleting"
     ]
   },
-  "aps": {},
+  "aps": {
+    "ScraperComponentType": [
+      "SERVICE_DISCOVERY",
+      "COLLECTOR",
+      "EXPORTER"
+    ]
+  },
   "arcregionswitch": {
     "AlarmCondition": [
       "red",
@@ -2232,6 +2239,54 @@
       "assistant"
     ]
   },
+  "bedrockagentcore": {
+    "BrowserNetworkMode": [
+      "PUBLIC"
+    ],
+    "BrowserStatus": [
+      "CREATING",
+      "CREATE_FAILED",
+      "READY",
+      "DELETING",
+      "DELETE_FAILED",
+      "DELETED"
+    ],
+    "CodeInterpreterNetworkMode": [
+      "PUBLIC",
+      "SANDBOX"
+    ],
+    "CodeInterpreterStatus": [
+      "CREATING",
+      "CREATE_FAILED",
+      "READY",
+      "DELETING",
+      "DELETE_FAILED",
+      "DELETED"
+    ],
+    "AgentStatus": [
+      "CREATING",
+      "CREATE_FAILED",
+      "UPDATING",
+      "UPDATE_FAILED",
+      "READY",
+      "DELETING"
+    ],
+    "NetworkMode": [
+      "PUBLIC"
+    ],
+    "ProtocolConfiguration": [
+      "MCP",
+      "HTTP"
+    ],
+    "AgentRuntimeEndpointStatus": [
+      "CREATING",
+      "CREATE_FAILED",
+      "UPDATING",
+      "UPDATE_FAILED",
+      "READY",
+      "DELETING"
+    ]
+  },
   "billing": {
     "BillingViewType": [
       "PRIMARY",
@@ -2288,6 +2343,7 @@
     ],
     "TimeUnit": [
       "ANNUALLY",
+      "CUSTOM",
       "DAILY",
       "MONTHLY",
       "QUARTERLY"
@@ -2424,6 +2480,9 @@
     "AnalyticsEngine": [
       "CLEAN_ROOMS_SQL",
       "SPARK"
+    ],
+    "AutoApprovedChangeType": [
+      "ADD_MEMBER"
     ],
     "CollaborationJobLogStatus": [
       "ENABLED",
@@ -4402,9 +4461,6 @@
       "PROJECT_CATALOG_STEWARD"
     ],
     "TargetEntityType": [
-      "DomainUnit",
-      "EnvironmentBlueprintConfiguration",
-      "EnvironmentProfile",
       "DOMAIN_UNIT",
       "ENVIRONMENT_BLUEPRINT_CONFIGURATION",
       "ENVIRONMENT_PROFILE",
@@ -4649,6 +4705,10 @@
   },
   "dsql": {},
   "dynamodb": {
+    "GlobalTableSettingsReplicationMode": [
+      "ENABLED",
+      "DISABLED"
+    ],
     "MultiRegionConsistency": [
       "EVENTUAL",
       "STRONG"
@@ -5050,8 +5110,13 @@
       "g6e.4xlarge",
       "g6e.8xlarge",
       "g6e.xlarge",
+      "g6f.2xlarge",
+      "g6f.4xlarge",
+      "g6f.large",
+      "g6f.xlarge",
       "gr6.4xlarge",
       "gr6.8xlarge",
+      "gr6f.4xlarge",
       "h1.16xlarge",
       "h1.2xlarge",
       "h1.4xlarge",
@@ -5134,6 +5199,17 @@
       "i8g.large",
       "i8g.metal-24xl",
       "i8g.xlarge",
+      "i8ge.12xlarge",
+      "i8ge.18xlarge",
+      "i8ge.24xlarge",
+      "i8ge.2xlarge",
+      "i8ge.3xlarge",
+      "i8ge.48xlarge",
+      "i8ge.6xlarge",
+      "i8ge.large",
+      "i8ge.metal-24xl",
+      "i8ge.metal-48xl",
+      "i8ge.xlarge",
       "im4gn.16xlarge",
       "im4gn.2xlarge",
       "im4gn.4xlarge",
@@ -5371,6 +5447,28 @@
       "m8gd.metal-24xl",
       "m8gd.metal-48xl",
       "m8gd.xlarge",
+      "m8i-flex.12xlarge",
+      "m8i-flex.16xlarge",
+      "m8i-flex.2xlarge",
+      "m8i-flex.4xlarge",
+      "m8i-flex.8xlarge",
+      "m8i-flex.large",
+      "m8i-flex.xlarge",
+      "m8i.12xlarge",
+      "m8i.16xlarge",
+      "m8i.24xlarge",
+      "m8i.2xlarge",
+      "m8i.32xlarge",
+      "m8i.48xlarge",
+      "m8i.4xlarge",
+      "m8i.8xlarge",
+      "m8i.96xlarge",
+      "m8i.large",
+      "m8i.metal-48xl",
+      "m8i.metal-96xl",
+      "m8i.xlarge",
+      "mac-m4.metal",
+      "mac-m4pro.metal",
       "mac1.metal",
       "mac2-m1ultra.metal",
       "mac2-m2.metal",
@@ -5386,6 +5484,7 @@
       "p4d.24xlarge",
       "p4de.24xlarge",
       "p5.48xlarge",
+      "p5.4xlarge",
       "p5e.48xlarge",
       "p5en.48xlarge",
       "p6-b200.48xlarge",
@@ -5606,6 +5705,26 @@
       "r8gd.metal-24xl",
       "r8gd.metal-48xl",
       "r8gd.xlarge",
+      "r8i-flex.12xlarge",
+      "r8i-flex.16xlarge",
+      "r8i-flex.2xlarge",
+      "r8i-flex.4xlarge",
+      "r8i-flex.8xlarge",
+      "r8i-flex.large",
+      "r8i-flex.xlarge",
+      "r8i.12xlarge",
+      "r8i.16xlarge",
+      "r8i.24xlarge",
+      "r8i.2xlarge",
+      "r8i.32xlarge",
+      "r8i.48xlarge",
+      "r8i.4xlarge",
+      "r8i.8xlarge",
+      "r8i.96xlarge",
+      "r8i.large",
+      "r8i.metal-48xl",
+      "r8i.metal-96xl",
+      "r8i.xlarge",
       "t1.micro",
       "t2.2xlarge",
       "t2.large",
@@ -9992,8 +10111,29 @@
       "DECEMBER"
     ],
     "Preference": [
-      "NO_PREFERENCE",
-      "CUSTOM_PREFERENCE"
+      "CUSTOM_PREFERENCE",
+      "NO_PREFERENCE"
+    ],
+    "PatchingMode": [
+      "NONROLLING",
+      "ROLLING"
+    ],
+    "S3Access": [
+      "ENABLED",
+      "DISABLED"
+    ],
+    "ZeroEtlAccess": [
+      "ENABLED",
+      "DISABLED"
+    ],
+    "ManagedResourceStatus": [
+      "ENABLED",
+      "ENABLING",
+      "DISABLED",
+      "DISABLING"
+    ],
+    "VpcEndpointType": [
+      "SERVICENETWORK"
     ]
   },
   "omics": {
@@ -10051,6 +10191,11 @@
     ],
     "Accelerators": [
       "GPU"
+    ],
+    "type": [
+      "BRANCH",
+      "TAG",
+      "COMMIT"
     ],
     "StorageType": [
       "STATIC",
@@ -10122,7 +10267,8 @@
     ],
     "SecurityConfigType": [
       "saml",
-      "iamidentitycenter"
+      "iamidentitycenter",
+      "iamfederation"
     ],
     "SecurityPolicyType": [
       "encryption",
@@ -11488,6 +11634,10 @@
       "EXPANDED",
       "COLLAPSED"
     ],
+    "QBusinessInsightsStatus": [
+      "ENABLED",
+      "DISABLED"
+    ],
     "ColumnDataSubType": [
       "FLOAT",
       "FIXED"
@@ -11989,6 +12139,10 @@
       "advanced",
       "standard"
     ],
+    "MasterUserAuthenticationType": [
+      "iam-db-auth",
+      "password"
+    ],
     "PerformanceInsightsRetentionPeriod": [
       7,
       31,
@@ -12298,6 +12452,7 @@
       "ap-southeast-3",
       "ap-southeast-4",
       "ap-southeast-5",
+      "ap-southeast-6",
       "ap-southeast-7",
       "ca-central-1",
       "ca-west-1",
@@ -12754,6 +12909,13 @@
     "NodeRecovery": [
       "Automatic",
       "None"
+    ],
+    "AutoScalerType": [
+      "Karpenter"
+    ],
+    "Mode": [
+      "Enable",
+      "Disable"
     ],
     "DeepHealthCheckType": [
       "InstanceStress",
@@ -13324,6 +13486,7 @@
       "ml.p4d.24xlarge",
       "ml.p4de.24xlarge",
       "ml.p5.48xlarge",
+      "ml.p5.4xlarge",
       "ml.p5e.48xlarge",
       "ml.p5en.48xlarge",
       "ml.p6-b200.48xlarge",
@@ -14053,6 +14216,30 @@
     ]
   },
   "simspaceweaver": {},
+  "smsvoice": {
+    "NumberCapabilities": [
+      "SMS",
+      "VOICE",
+      "MMS"
+    ],
+    "NumberType": [
+      "LONG_CODE",
+      "TOLL_FREE",
+      "TEN_DLC",
+      "SIMULATOR"
+    ],
+    "Action": [
+      "AUTOMATIC_RESPONSE",
+      "OPT_OUT",
+      "OPT_IN"
+    ],
+    "ProtectStatus": [
+      "ALLOW",
+      "BLOCK",
+      "MONITOR",
+      "FILTER"
+    ]
+  },
   "sns": {
     "Protocol": [
       "http/s",
@@ -14280,6 +14467,10 @@
     "ProvisionedResourceCleanup": [
       "AUTOMATIC",
       "OFF"
+    ],
+    "BrowserType": [
+      "CHROME",
+      "FIREFOX"
     ],
     "Type": [
       "LambdaLayer"

@@ -1445,6 +1445,12 @@
     }
   },
   "synthetics": {
+    "BrowserType": {
+      "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-synthetics/lib/canary.ts",
+      "sdk_service": "synthetics",
+      "sdk_enum_name": "BrowserType",
+      "match_percentage": 1
+    },
     "ResourceToReplicateTags": {
       "cdk_path": "aws-cdk/packages/aws-cdk-lib/aws-synthetics/lib/canary.ts",
       "sdk_service": "synthetics",
